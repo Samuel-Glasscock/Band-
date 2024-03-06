@@ -1,5 +1,3 @@
-import sys
-print(sys.path)
 from dotenv import load_dotenv
 import os
 
