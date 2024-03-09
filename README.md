@@ -1,12 +1,13 @@
 # Spotify Playlist to Google Sheet Automation
 
-**Description:** This project automates the process of having songs and artists from a spotify playlist being inserted into a Google Sheet for rating or communicating with others about the songs asynchronously
+**Description:** This project integrates Spotify playlists with Google Sheets, offering an effective solution for music enthusiats, bands, and collaborative teams to dynamically rate and discuss playlist songs asynchronously. At its core, the automation simplifies the task of transferring songs and artists as added directly from Spotify into a Google Sheet, where participants can easily rate each song and share insights or feedback.
+
 
 ## Table of Contents
 
-- [Usage(Practical)](#usage-practical)
+- [Usage (Practical)](#usage-practical)
 - [Installation](#installation)
-- [Usage(Code)](#usage-code)
+- [Usage (Code)](#usage-code)
 - [Tech Stack](#tech-stack)
 
 ## Usage (Practical)
@@ -66,4 +67,11 @@ Based on the needs of your project for frequency of updates, this can be either 
 
 ####APIs
 
+- **Spotify Web API:** Provides access to Spotify's music database, allowing account authenticatation and playlist access (https://developer.spotify.com/documentation/web-api)
+- **Google Drive API:** Provides broader access to user's files such as permission management and file creation and deletion by automation bot (https://developers.google.com/drive/api/guides/about-sdk)
+- **Google Sheets API:** Enables read and write permission to Google Sheets programmatically (https://developers.google.com/sheets/api/guides/concepts)
+
 ####Libaries
+
+- **spotipy:** Lightweight Python library that simplifies interacting with the Spotify Web API. Handles authentication and making requests to Spotify's endpoints (https://spotipy.readthedocs.io/en/2.22.1/)
+- **gspread:** Python library that comes with Google Sheet CRUD functions out of the box and acts as a wrapper for the Google Sheets API to provide a more dev friendly interface (https://docs.gspread.org/en/v6.0.0/)
