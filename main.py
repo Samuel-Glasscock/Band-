@@ -8,7 +8,6 @@ load_dotenv()
 PLAYLIST_ID = os.getenv("PLAYLIST_ID")
 
 
-
 def main():
     # use Spotify API to fetch playlist tracks
     playlist_tracks = get_playlist_tracks(PLAYLIST_ID)

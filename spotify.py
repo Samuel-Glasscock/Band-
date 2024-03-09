@@ -9,7 +9,6 @@ load_dotenv()
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 SPOTIFY_CACHE_PATH = os.getenv("SPOTIFY_CACHE_PATH")
-PLAYLIST_ID = os.getenv("PLAYLIST_ID")
 
 # Configure app info
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
@@ -51,6 +50,7 @@ def get_playlist_tracks(playlist_id):
 
 # For testing your how your playlist data displaying
 
+# PLAYLIST_ID = os.getenv("PLAYLIST_ID")
 # playlist_tracks = get_playlist_tracks(PLAYLIST_ID)
 # for track_name, artist_name in playlist_tracks:
 #     print(f"{track_name} by {artist_name}")
