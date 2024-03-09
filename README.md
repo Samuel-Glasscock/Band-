@@ -60,18 +60,18 @@
 - `setup_google_sheet()`: specify arguemnts for your specific Google Worksheet. See docstring for function in `google_sheets.py` file
 - `batch_update_sheet()`: specify arguments for what cell to start writing data. See docstring for function in `google_sheets.py` file
 
-####Scheduling Automated updates
+#### Scheduling Automated updates
 Based on the needs of your project for frequency of updates, this can be either scheduled on your local machine or delegated to cloud based options. I use Windows Task Manager since our band only adds a small amount of songs daily, which is comparable to launchd or cron on a macOS or Linux system respectively. Some cloud options could be Google Cloud Scheduler, AWS Lambda and Amazon CloudWatch Events, or Heroku.
 
 ## Tech Stack
 
-####APIs
+#### APIs
 
 - **Spotify Web API:** Provides access to Spotify's music database, allowing account authenticatation and playlist access (https://developer.spotify.com/documentation/web-api)
 - **Google Drive API:** Provides broader access to user's files such as permission management and file creation and deletion by automation bot (https://developers.google.com/drive/api/guides/about-sdk)
 - **Google Sheets API:** Enables read and write permission to Google Sheets programmatically (https://developers.google.com/sheets/api/guides/concepts)
 
-####Libaries
+#### Libraries
 
 - **spotipy:** Lightweight Python library that simplifies interacting with the Spotify Web API. Handles authentication and making requests to Spotify's endpoints (https://spotipy.readthedocs.io/en/2.22.1/)
 - **gspread:** Python library that comes with Google Sheet CRUD functions out of the box and acts as a wrapper for the Google Sheets API to provide a more dev friendly interface (https://docs.gspread.org/en/v6.0.0/)
